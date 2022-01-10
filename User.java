@@ -168,7 +168,7 @@ public class User {
         else{
             System.out.println("-----Booked Tickets-----");
             for(int i=0;i<tp.size();i++){
-                System.out.println("Ticket No. : "+(i+1)+" "+Train.stops[tp.get(i).from-1] +"->"+Train.stops[tp.get(i).to-1]);
+                System.out.println("Ticket No. : "+(i+1)+" "+Train.stops[tp.get(i).from-1] +" -> "+Train.stops[tp.get(i).to-1]);
             }
         }
 
