@@ -1,8 +1,11 @@
 public class Admin {
     static void login() {
         System.out.println("----Welcome Admin----");
-        System.out.print("Enter Username : ");
+        System.out.print("Enter Username or 0 to exit : ");
         String uname = Main.sc.nextLine();
+        if(uname.equals("0")){
+            Main.homepage();
+        }
         System.out.print("Enter Password : ");
         String pass = Main.sc.nextLine();
         if (uname.equals("a") && pass.equals("z")) {
