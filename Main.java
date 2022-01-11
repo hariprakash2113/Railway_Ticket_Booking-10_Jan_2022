@@ -19,6 +19,8 @@ public class Main{
 
     static ArrayList<Ticket> waiters = new ArrayList<>();
 
+    static ArrayList<Train> trainList = new ArrayList<>();
+
     public static void homepage(){
         System.out.println("------Railway Ticket Booking Application----------");
         System.out.println("    -> Enter 1 for Admin Login");

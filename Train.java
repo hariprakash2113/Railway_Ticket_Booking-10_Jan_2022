@@ -13,12 +13,9 @@ public class Train {
 
     public static void book(int ind) {
         System.out.println("------------Booking Portal--------------");
-        System.out.println("1 => " + stops[0]);
-        System.out.println("2 => " + stops[1]);
-        System.out.println("3 => " + stops[2]);
-        System.out.println("4 => " + stops[3]);
-        System.out.println("5 => " + stops[4]);
-        System.out.println("6 => " + stops[5]);
+        for (int i = 0; i < seats.length; i++) {
+            System.out.println((i+1)+" => " + stops[i]);
+        }
         System.out.print("Select Onboarding station : ");
         int from = Integer.parseInt(Main.sc.nextLine());
         if (from > 6 || from < 1) {
@@ -30,12 +27,9 @@ public class Train {
                 User.userPage(ind);
             }
         }
-        System.out.println("1 => " + stops[0]);
-        System.out.println("2 => " + stops[1]);
-        System.out.println("3 => " + stops[2]);
-        System.out.println("4 => " + stops[3]);
-        System.out.println("5 => " + stops[4]);
-        System.out.println("6 => " + stops[5]);
+        for (int i = 0; i < seats.length; i++) {
+            System.out.println((i+1)+" => " + stops[i]);
+        }
         System.out.print("Select Destination station : ");
         int to = Integer.parseInt(Main.sc.nextLine());
         if (from == to) {
