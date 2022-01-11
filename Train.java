@@ -14,7 +14,7 @@ public class Train {
     public static void book(int ind) {
         System.out.println("------------Booking Portal--------------");
         for (int i = 0; i < seats.length; i++) {
-            System.out.println((i+1)+" => " + stops[i]);
+            System.out.println((i + 1) + " => " + stops[i]);
         }
         System.out.print("Select Onboarding station : ");
         int from = Integer.parseInt(Main.sc.nextLine());
@@ -28,7 +28,7 @@ public class Train {
             }
         }
         for (int i = 0; i < seats.length; i++) {
-            System.out.println((i+1)+" => " + stops[i]);
+            System.out.println((i + 1) + " => " + stops[i]);
         }
         System.out.print("Select Destination station : ");
         int to = Integer.parseInt(Main.sc.nextLine());
@@ -104,8 +104,6 @@ public class Train {
         User.userPage(ind);
     }
 
-
-
     public static void showTrains(int ind) {
         System.out.println("-----Available Trains-----");
         System.out.println("Train Name => " + trainName);
@@ -171,7 +169,7 @@ public class Train {
                 Main.soldTickets.get(cap).id = Main.waiters.get(i).id;
                 changeSeatDet(Main.waiters.get(i).from, Main.waiters.get(i).to, canceller.seat, Main.waiters.get(i).id);
                 int n = findID(Main.waiters.get(i).id);
-                Main.users.get(n).walletAmount -= (Main.waiters.get(i).to-Main.waiters.get(i).from)*50;
+                Main.users.get(n).walletAmount -= (Main.waiters.get(i).to - Main.waiters.get(i).from) * 50;
                 return;
             }
         }
